@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # get all titles for all 50 pages
     for page in range(1, 51):
         page_titles: List[str] = get_title(base_url.format(page))
-        # all the page titles to the all titles array
+        # add the page titles to the all titles array
         all_titles.extend(page_titles)
         print(f"page {page} done")
 
